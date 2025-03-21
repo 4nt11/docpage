@@ -118,17 +118,17 @@ antes de reiniciar el servicio, debemos habilitar el modulo con el comando a2enm
 
 para la prueba, creé un archivo txt en el DocumentRoot:
 
-![poormonitoring-apache-01.png]()
+![revisamos el archivo creado en /var/www/html/secreto.txt](./poormonitoring-apache-01.png)
 
 revisamos el archivo creado en /var/www/html/secreto.txt
 
 ahora, al intentar acceder a este archivo, el cual es teóricamente accesible desde la web, la instancia de apache nos dará un 403 Forbidden.
 
-![poormonitoring-apache-02.png]()
+![hacemos una llamada a 127.0.0.1:8080/secreto.txt y recibimos un 403.](./poormonitoring-apache-02.png)
 
 hacemos una llamada a 127.0.0.1:8080/secreto.txt y recibimos un 403.
 
-![poormonitoring-apache-03.png]()
+![lo mismo que arriba, solo que también vemos el log de eventos que creamos.](./poormonitoring-apache-03.png)
 
 lo mismo que arriba, solo que también vemos el log de eventos que creamos.
 
